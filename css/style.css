@@ -1,3 +1,127 @@
-:root {
-    --primary: '#63c6ae'
+@charset "UTF-8";
+
+/*
+    fonts = Sintony (header, footer quote, titles), Helvetica Neue (paragraphs)
+*/
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helvetica_neue_medium_extended-webfont.woff2') format('woff2'),
+    url('../fonts/helvetica_neue_medium_extended-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+/*
+    variables
+*/
+
+:root {
+    --infusion-primary: #63c6ae;
+    --infusion-secondary: #242a2c;
+}
+
+/*
+    tag declarations
+*/
+
+nav {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+header {
+    background-image: url("../img/Banner Image.png");
+    background-size: cover;
+    background-origin: border-box;
+    padding-top: 15em;
+    padding-bottom: 15em;
+}
+
+/*
+    id declarations
+*/
+
+#navbar-brand {
+    width: 400px;
+}
+
+#header-primary-rect {
+    width: 640px;
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 54px;
+}
+
+#header-secondary-rect {
+    width: 480px;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+#header-buy-it {
+    width: max-content;
+    border-radius: 4px;
+    background-color: rgba(36,42,44,0.2);
+    border: 2px solid white;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+/*
+    class declarations
+*/
+
+.font-sintony-bold {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+}
+
+.font-sintony-normal {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+}
+
+.font-helvetica-neue {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.infusion-color-primary {
+    color: var(--infusion-primary);
+}
+
+.infusion-bg-primary {
+    background-color: var(--infusion-primary);
+}
+
+.infusion-color-secondary {
+    color: var(--infusion-secondary);
+}
+
+.infusion-bg-secondary {
+    background-color: var(--infusion-secondary);
+}
+
+.article-paragraph {
+    font-size: 14px;
+    line-height: 26px;
+    color: #737d84;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.article-button {
+    width: 150px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.article-heading {
+    font-size: 21px;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
