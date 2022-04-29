@@ -39,12 +39,17 @@ header {
     padding-bottom: 15em;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*
     id declarations
 */
 
 #navbar-brand {
     width: 400px;
+    text-align: end;
 }
 
 #header-primary-rect {
@@ -69,6 +74,60 @@ header {
     font-size: 20px;
     letter-spacing: 0;
     line-height: 30px;
+}
+
+#bg-img-1 {
+    background-image: url("../img/105701236.png");
+}
+
+#bg-img-2 {
+    background-image: url("../img/160323220.png");
+}
+
+#bg-img-3 {
+    background-image: url("../img/IMG_3556.png");
+}
+
+#bg-img-4 {
+    background-image: url("../img/IMG_4998.png");
+}
+
+#bg-img-5 {
+    background-image: url("../img/IMG_5450.png");
+}
+
+#bg-img-6 {
+    background-image: url("../img/IMG_5472.png");
+}
+
+#bg-img-7 {
+    background-image: url("../img/IMG_5477.png");
+}
+
+#bg-img-8 {
+    background-image: url("../img/IMG_5498.png");
+}
+
+#bg-img-9 {
+    background-image: url("../img/IMG_9053.png");
+}
+
+#bg-img-10 {
+    background-image: url("../img/IMG_9843.png");
+}
+
+#bg-img-11 {
+    background-image: url("../img/IMG_9877.png");
+}
+
+#bg-img-12 {
+    background-image: url("../img/105701236.png");
+}
+
+#text-quote {
+    font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 44px;
 }
 
 /*
@@ -125,3 +184,36 @@ header {
     line-height: 32px;
 }
 
+.bg-img {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+    #header-primary-rect {
+        width: 75%;
+    }
+
+    #header-secondary-rect {
+        width: 60%;
+    }
+
+    #header-buy-it {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #header-secondary-rect {
+        display: none;
+    }
+
+    #navbar-brand {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
